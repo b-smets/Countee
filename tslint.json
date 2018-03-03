@@ -1,0 +1,99 @@
+{
+  "extends": "tslint:recommended",
+  "rulesDirectory": [
+    "tslint-microsoft-contrib"
+  ],
+  "rules": {
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-access": false,
+    "no-console": [
+      true,
+      "log",
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-require-imports": false,
+    "no-string-literal": false,
+    "no-unused-variable": true,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-single"
+    ],
+    "typedef": [
+      true,
+      "property-declaration",
+      "member-variable-declaration"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-leading- derscore",
+      "allow-pascal-case"
+    ],
+    "no-custom-pure-component": true,
+    "jest-no-focused": true,
+    "ordered-imports": [
+      true
+    ],
+    "object-literal-key-quotes": [
+      true,
+      "consistent-as-needed"
+    ],
+    // TODO: Remove some of these ignores WBD-954
+    "arrow-parens": false,
+    "prefer-for-of": false,
+    "array-type": [
+      true,
+      "array"
+    ],
+    "max-classes-per-file": [
+      false
+    ],
+    /**
+      * Security Rules. The following rules should be turned on because they find security issues
+      * or are recommended in the Microsoft Secure Development Lifecycle (SDL)
+      */
+    "insecure-random": true,
+    "no-banned-terms": true,
+    "no-cookies": true,
+    "no-delete-expression": true,
+    "no-disable-auto-sanitization": true,
+    "no-document-domain": true,
+    "no-document-write": true,
+    "no-duplicate-parameter-names": true,
+    "no-eval": true,
+    "no-exec-script": true,
+    "no-function-constructor-with-string-args": true,
+    "no-http-string": [
+      true,
+      "http://www.example.com/?.*",
+      "http://www.examples.com/?.*"
+    ],
+    "no-inner-html": true,
+    "no-octal-literal": true,
+    "no-string-based-set-immediate": true,
+    "no-string-based-set-interval": true,
+    "no-string-based-set-timeout": true,
+    "non-literal-require": true,
+    "possible-timing-attack": true,
+    "react-anchor-blank-noopener": true,
+    "react-iframe-missing-sandbox": true,
+    "react-no-dangerous-html": true
+  }
+}
