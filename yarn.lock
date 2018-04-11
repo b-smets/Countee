@@ -789,11 +789,11 @@
   version "16.0.40"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.40.tgz#caabc2296886f40b67f6fc80f0f3464476461df9"
 
-"@types/react@16.3.5":
-  version "16.3.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.3.5.tgz#bd3b21285602ea7cadb4b9e0d9711d96fd5692cc"
+"@types/react@16.3.9":
+  version "16.3.9"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.3.9.tgz#15be16b53c89aac558cf6445774502b2792555ff"
   dependencies:
-    csstype "^2.0.0"
+    csstype "^2.2.0"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -2430,9 +2430,9 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.0.0.tgz#7d199dd8dca409077e81569eca0c71a74c4f4158"
+csstype@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.2.0.tgz#1656ef97553ac53b77090844a2531c6660ebd902"
 
 dashdash@^1.12.0:
   version "1.14.1"
