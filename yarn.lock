@@ -745,9 +745,9 @@
   version "22.2.3"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.2.3.tgz#0157c0316dc3722c43a7b71de3fdf3acbccef10d"
 
-"@types/node@9.6.2":
-  version "9.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.2.tgz#e49ac1adb458835e95ca6487bc20f916b37aff23"
+"@types/node@9.6.4":
+  version "9.6.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.4.tgz#0ef7b4cfc3499881c81e0ea1ce61a23f6f4f5b42"
 
 "@types/prop-types@15.5.2":
   version "15.5.2"
@@ -772,9 +772,9 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-redux@5.0.15":
-  version "5.0.15"
-  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-5.0.15.tgz#420af2c702ac7aab321cf45bb7d3cb2503dd24d5"
+"@types/react-redux@5.0.16":
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-5.0.16.tgz#46f1b2043abd2b4364a857100abf5e5a6ef94bf0"
   dependencies:
     "@types/react" "*"
     redux "^3.6.0"
@@ -789,11 +789,11 @@
   version "16.0.40"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.40.tgz#caabc2296886f40b67f6fc80f0f3464476461df9"
 
-"@types/react@16.3.5":
-  version "16.3.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.3.5.tgz#bd3b21285602ea7cadb4b9e0d9711d96fd5692cc"
+"@types/react@16.3.9":
+  version "16.3.9"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.3.9.tgz#15be16b53c89aac558cf6445774502b2792555ff"
   dependencies:
-    csstype "^2.0.0"
+    csstype "^2.2.0"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -2430,9 +2430,9 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.0.0.tgz#7d199dd8dca409077e81569eca0c71a74c4f4158"
+csstype@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.2.0.tgz#1656ef97553ac53b77090844a2531c6660ebd902"
 
 dashdash@^1.12.0:
   version "1.14.1"
