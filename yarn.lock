@@ -2066,6 +2066,14 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+chalk@^2.4.0:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
+
 change-case@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/change-case/-/change-case-2.3.1.tgz#2c4fde3f063bb41d00cd68e0d5a09db61cbe894f"
@@ -6098,10 +6106,11 @@ react-native-svg@6.2.2:
   dependencies:
     prop-types "^15.6.0"
 
-react-native-typescript-transformer@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.4.tgz#74876958a2947a81e598f336a2f42be1bb01a18c"
+react-native-typescript-transformer@1.2.10:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.10.tgz#6f76c1449028cdeafa184b533301ecd547367ed1"
   dependencies:
+    chalk "^2.4.0"
     find-root "^1.1.0"
     jju "^1.3.0"
     semver "^5.4.1"
