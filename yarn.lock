@@ -723,9 +723,9 @@
     component-type "^1.2.1"
     join-component "^1.1.0"
 
-"@types/expo@25.0.3":
-  version "25.0.3"
-  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-25.0.3.tgz#476640d63d04313b22fe03f20d1be2772be44891"
+"@types/expo@27.0.6":
+  version "27.0.6"
+  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-27.0.6.tgz#2bc1720c66ca85836fd5bb4bf1c0aabbac729034"
   dependencies:
     "@types/fbemitter" "*"
     "@types/react" "*"
