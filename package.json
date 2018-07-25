@@ -3,25 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@types/expo": "25.0.3",
+    "@types/expo": "27.0.6",
     "@types/firebase": "3.2.1",
-    "@types/jest": "22.2.3",
-    "@types/node": "9.6.4",
-    "@types/prop-types": "15.5.2",
-    "@types/react": "16.3.9",
-    "@types/react-native": "0.52.24",
-    "@types/react-navigation": "1.5.5",
-    "@types/react-redux": "5.0.16",
+    "@types/jest": "23.3.0",
+    "@types/node": "10.5.3",
+    "@types/prop-types": "15.5.4",
+    "@types/react": "16.4.7",
+    "@types/react-native": "0.56.4",
+    "@types/react-navigation": "2.0.12",
     "@types/react-test-renderer": "16.0.1",
-    "jest-expo": "26.0.0",
-    "react-native-scripts-ts": "1.13.0",
-    "react-native-typescript-transformer": "1.2.4",
-    "react-test-renderer": "16.3.1",
-    "ts-jest": "22.4.2",
-    "tslib": "1.9.0",
-    "tslint": "5.9.1",
-    "tslint-microsoft-contrib": "5.0.3",
-    "typescript": "2.8.1"
+    "jest-expo": "28.0.0",
+    "react-native-scripts-ts": "1.15.0",
+    "react-native-typescript-transformer": "1.2.10",
+    "react-test-renderer": "16.4.1",
+    "ts-jest": "23.0.1",
+    "tslib": "1.9.3",
+    "tslint": "5.11.0",
+    "tslint-microsoft-contrib": "5.1.0",
+    "typescript": "2.9.2"
   },
   "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",
   "scripts": {
@@ -32,16 +31,36 @@
     "test": "node node_modules/jest/bin/jest.js"
   },
   "dependencies": {
-    "@expo/vector-icons": "6.3.1",
-    "expo": "26.0.0",
-    "firebase": "4.12.1",
-    "native-base": "2.4.1",
-    "prop-types": "15.6.1",
+    "@expo/vector-icons": "^6.3.1",
+    "expo": "28.0.0",
+    "firebase": "^5.3.0",
+    "native-base": "2.6.1",
+    "prop-types": "^15.6.2",
     "react": "16.3.1",
-    "react-native": "0.55.1",
-    "react-navigation": "1.5.11",
-    "react-redux": "5.0.7",
-    "redux": "3.7.2",
-    "redux-thunk": "2.2.0"
+    "react-native": "0.55.4",
+    "react-navigation": "^2.9.2"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/__tests__/**/*.[tj]s?(x)",
+      "**/?(*.)(spec|test).[tj]s?(x)"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
   }
 }

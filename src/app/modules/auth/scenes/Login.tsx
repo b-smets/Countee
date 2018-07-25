@@ -1,14 +1,14 @@
-import { Body, Container, Content, Form, Header, Title } from 'native-base';
+import { Container, Content } from 'native-base';
 import * as React from 'react';
-import { Text, View } from 'react-native';
 import { NavigationScreenProp } from 'react-navigation';
+import { login } from '../api';
 import { LoginForm } from '../components/LoginForm';
 import { persistUser } from '../storage';
-import { IUser } from '../types';
+import { IUserInfo } from '../types';
+import { toUserInfo } from '../util';
 
 export interface IProps {
   navigation: NavigationScreenProp<any>;
-  login: (email: string, password: string, callback: (user?: IUser, error?: Error) => void) => any;
 }
 
 export class Login extends React.Component<IProps> {
@@ -24,14 +24,9 @@ export class Login extends React.Component<IProps> {
   }
 
   private doLogin = (email: string, password: string) => {
-    this.props.login(email, password, this.onComplete);
-  }
-
-  private onComplete = (user?: IUser, error?: Error) => {
-    if (user == null || error) {
-      console.error('Login failed: ', error);
-      return;
-    }
-    persistUser(user).then(() => this.props.navigation.navigate('Home'));
+    login(email, password)
+      .then(user => persistUser(toUserInfo(user)))
+      .then(() => this.props.navigation.navigate('App'))
+      .catch(error => console.error('Login failed', error));
   }
 }

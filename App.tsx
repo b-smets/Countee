@@ -1,10 +1,8 @@
 import Expo from 'expo';
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Provider } from 'react-redux';
-import { Loading } from './src/app/components/Loading';
+import { StyleSheet } from 'react-native';
 import { RootStack } from './src/app/config/routes';
-import { StoreProvider } from './src/app/redux';
+import { AuthContext, AuthProvider } from './src/app/modules/auth';
 
 interface IState {
   fontLoaded: boolean;
@@ -25,14 +23,20 @@ export default class App extends React.Component<{}, IState> {
   }
 
   public render() {
-    if (!this.state.fontLoaded) {
-      return <Expo.AppLoading startAsync={null} onFinish={null} />;
-    }
-
+    const { fontLoaded } = this.state;
     return (
-      <StoreProvider>
-        <RootStack />
-      </StoreProvider>
+      <AuthProvider>
+        <AuthContext.Consumer>
+          {
+            ({ userInfo, subscribedForAuthChanges }) => {
+              if (!fontLoaded || !subscribedForAuthChanges) {
+                return <Expo.AppLoading />;
+              }
+              return <RootStack loggedIn={!!userInfo} />;
+            }
+          }
+        </AuthContext.Consumer>
+      </AuthProvider>
     );
   }
 }
