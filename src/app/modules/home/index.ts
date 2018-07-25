@@ -1,1 +1,1 @@
-export { HomeContainer } from './scenes/HomeContainer';
+export { Home } from './scenes/Home';

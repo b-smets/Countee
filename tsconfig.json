@@ -18,8 +18,4 @@
     "strict": true,
     "noImplicitReturns": true
   },
-  "exclude": [
-    "node_modules",
-    ".expo"
-  ]
 }

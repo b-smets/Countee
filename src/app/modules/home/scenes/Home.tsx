@@ -1,15 +1,22 @@
 import { Container, Content, Text } from 'native-base';
 import * as React from 'react';
-import { IUser } from '../../auth';
+import { AuthContext, IUserInfo } from '../../auth';
 
-export interface IProps {
-  user: IUser;
-}
-
-export const Home: React.SFC<IProps> = ({ user }) =>
+export const Home: React.SFC = () =>
   <Container>
     <Content>
-      <Text>Logged in as {user.name}</Text>
+      <AuthContext.Consumer>
+        {
+          ({ userInfo }) => {
+            if (userInfo) {
+              return (
+                <Text>Logged in as {userInfo.name}</Text>
+              );
+            }
+            return <Text>Not logged in</Text>;
+          }
+        }
+      </AuthContext.Consumer>
     </Content>
   </Container>
   ;

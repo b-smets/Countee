@@ -1,16 +1,16 @@
-import { StackNavigator } from 'react-navigation';
-import { LoginContainer } from '../modules/auth';
-import { HomeContainer } from '../modules/home';
+import { createStackNavigator } from 'react-navigation';
+import { Login } from '../modules/auth';
+import { Home } from '../modules/home';
 
-export const RootStack = StackNavigator({
+export const RootStack = createStackNavigator({
   Login: {
-    screen: LoginContainer,
+    screen: Login,
     navigationOptions: {
       title: 'Login',
     },
   },
   Home: {
-    screen: HomeContainer,
+    screen: Home,
     navigationOptions: {
       title: 'Home',
     },
