@@ -18,7 +18,7 @@ export class LoginForm extends React.Component<IProps, IState> {
     password: '',
   };
 
-  private _passwordInput: Input | null = null;
+  private _passwordInput: React.RefObject<Input> = React.createRef<Input>();
 
   render() {
     return (
@@ -31,7 +31,7 @@ export class LoginForm extends React.Component<IProps, IState> {
           </Item>
           <Item>
             <Input placeholder='Password' onChangeText={password => this.setState(prevState => ({ password }))}
-              secureTextEntry={true} ref={c => this._passwordInput = c} onSubmitEditing={this.performLogin} />
+              secureTextEntry={true} ref={this._passwordInput} onSubmitEditing={this.performLogin} />
           </Item>
         </Form>
         <Button full disabled={!this.canLogin()} onPress={this.performLogin}>
@@ -42,8 +42,8 @@ export class LoginForm extends React.Component<IProps, IState> {
   }
 
   private focusPassword = () => {
-    if (this._passwordInput) {
-      (this._passwordInput as any)._root.focus();
+    if (this._passwordInput.current) {
+      (this._passwordInput.current as any)._root.focus();
     }
   }
 

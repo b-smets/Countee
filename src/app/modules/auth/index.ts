@@ -1,3 +1,3 @@
-export { reducer as user } from './reducers';
-export { LoginContainer } from './scenes/LoginContainer';
-export { IUser } from './types';
+export { Login } from './scenes/Login';
+export { AuthProvider, AuthContext } from './components/AuthProvider';
+export { IUserInfo } from './types';
