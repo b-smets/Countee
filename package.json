@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@types/expo": "27.0.6",
+    "@types/expo": "27.0.15",
     "@types/firebase": "3.2.1",
     "@types/jest": "23.3.0",
     "@types/node": "10.5.3",
