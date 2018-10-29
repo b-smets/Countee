@@ -737,9 +737,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-navigation@2.0.24":
-  version "2.0.24"
-  resolved "https://registry.yarnpkg.com/@types/react-navigation/-/react-navigation-2.0.24.tgz#f7cb197efed1496129283c9fd33f134e8cc27803"
+"@types/react-navigation@2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@types/react-navigation/-/react-navigation-2.13.0.tgz#ec58d45421cd2fa42e593a7464ab192f1290b992"
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
