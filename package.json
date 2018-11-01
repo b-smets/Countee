@@ -20,7 +20,7 @@
     "tslib": "1.9.3",
     "tslint": "5.11.0",
     "tslint-microsoft-contrib": "5.2.1",
-    "typescript": "2.9.2"
+    "typescript": "3.1.6"
   },
   "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",
   "scripts": {
