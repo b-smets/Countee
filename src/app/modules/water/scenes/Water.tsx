@@ -1,11 +1,11 @@
 import { Body, Container, Content, Header, Title } from 'native-base';
 import * as React from 'react';
 
-export const Home: React.SFC = () =>
+export const Water: React.SFC = () =>
   <Container>
     <Header>
       <Body>
-        <Title>Home</Title>
+        <Title>Water</Title>
       </Body>
     </Header>
     <Content />

@@ -1,13 +1,16 @@
 import { Body, Container, Content, Header, Title } from 'native-base';
 import * as React from 'react';
+import { UserCard } from '../components/UserCard';
 
-export const Home: React.SFC = () =>
+export const Profile: React.SFC = () =>
   <Container>
     <Header>
       <Body>
-        <Title>Home</Title>
+        <Title>Profile</Title>
       </Body>
     </Header>
-    <Content />
+    <Content>
+      <UserCard />
+    </Content>
   </Container>
   ;

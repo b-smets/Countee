@@ -32,8 +32,12 @@ export class AuthProvider extends React.Component<{}, IAuthContext> {
 
   componentDidMount() {
     this._authStateUnsubscribe = registerForAuthStateChanges(fbUser => {
-      const userInfo: IUserInfo | null = fbUser ? toUserInfo(fbUser) : null;
-      this.setState(() => ({ userInfo, subscribedForAuthChanges: true }));
+      if (fbUser) {
+        const userInfo = toUserInfo(fbUser);
+        this.setState(() => ({ userInfo, subscribedForAuthChanges: true }));
+      } else {
+        this.setState(() => ({ userInfo: null, subscribedForAuthChanges: true }));
+      }
     });
   }
 

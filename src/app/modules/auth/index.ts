@@ -1,3 +1,4 @@
 export { Login } from './scenes/Login';
-export { AuthProvider, AuthContext } from './components/AuthProvider';
+export { AuthProvider, AuthContext, IAuthContext } from './components/AuthProvider';
+export { withAuthContext } from './components/withAuthContext';
 export { IUserInfo } from './types';

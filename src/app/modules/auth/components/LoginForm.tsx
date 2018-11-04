@@ -1,6 +1,6 @@
 import { Button, Form, Input, Item, Text } from 'native-base';
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 
 export interface IProps {
   onLogin: (email: string, password: string) => void;
@@ -23,7 +23,7 @@ export class LoginForm extends React.Component<IProps, IState> {
   render() {
     return (
       <View>
-        <Form style={styles.loginForm}>
+        <Form style={{ marginBottom: 10 }}>
           <Item>
             <Input placeholder='Email'
               onChangeText={email => this.setState(prevState => ({ email }))}
@@ -57,9 +57,3 @@ export class LoginForm extends React.Component<IProps, IState> {
     }
   }
 }
-
-const styles = StyleSheet.create({
-  loginForm: {
-    marginBottom: 10,
-  },
-});
