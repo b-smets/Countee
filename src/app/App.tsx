@@ -1,25 +1,25 @@
-import Expo from 'expo';
+import { AppLoading, Font } from 'expo';
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
-import { RootStack } from './src/app/config/routes';
-import { AuthContext, AuthProvider } from './src/app/modules/auth';
+import { RootStack } from './config/routes';
+import { AuthContext, AuthProvider } from './modules/auth';
 
 interface IState {
   fontLoaded: boolean;
 }
 
-export default class App extends React.Component<{}, IState> {
+export class App extends React.Component<{}, IState> {
 
   state: IState = {
     fontLoaded: false,
   };
 
   async componentWillMount() {
-    await Expo.Font.loadAsync({
+    await Font.loadAsync({
+      Ionicons: require('native-base/Fonts/Ionicons.ttf'),
       Roboto: require('native-base/Fonts/Roboto.ttf'),
       Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
     });
-    this.setState(prevState => ({ fontLoaded: true }));
+    this.setState(() => ({ fontLoaded: true }));
   }
 
   public render() {
@@ -30,7 +30,7 @@ export default class App extends React.Component<{}, IState> {
           {
             ({ userInfo, subscribedForAuthChanges }) => {
               if (!fontLoaded || !subscribedForAuthChanges) {
-                return <Expo.AppLoading />;
+                return <AppLoading />;
               }
               return <RootStack loggedIn={!!userInfo} />;
             }
@@ -40,12 +40,3 @@ export default class App extends React.Component<{}, IState> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

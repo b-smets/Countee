@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/firestore';
-import { FIREBASE_API_KEY, FIREBASE_AUTH_DOMAIN, FIREBASE_DATABASE_URL, FIREBASE_PROJECT_ID } from '../config/constants';
+import { FIREBASE_API_KEY, FIREBASE_AUTH_DOMAIN, FIREBASE_DATABASE_URL, FIREBASE_PROJECT_ID } from './constants';
 
 const config = {
   apiKey: FIREBASE_API_KEY,
