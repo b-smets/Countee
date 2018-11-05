@@ -28,7 +28,7 @@
     "validate": "npm run lint --scripts-prepend-node-path && tsc --noEmit"
   },
   "dependencies": {
-    "expo": "31.0.3",
+    "expo": "31.0.4",
     "firebase": "^5.5.7",
     "native-base": "^2.8.1",
     "react": "16.5.0",

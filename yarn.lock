@@ -3009,10 +3009,10 @@ expo-sms@~1.1.0:
     expo-core "~1.2.0"
     expo-permissions-interface "~1.2.0"
 
-expo@31.0.3:
-  version "31.0.3"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-31.0.3.tgz#00c89986921998570869e782b58fc4b80540d276"
-  integrity sha512-sPQQSQTlcrNtB6AQAD2j0Xh1SPTZkgDgDiPpqmbw7nAOF/mj5FevYsQ5/cpynCxmBziPHM045eUJnrATHUFz/A==
+expo@31.0.4:
+  version "31.0.4"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-31.0.4.tgz#0e7178b32f27189e799cd76f502094e0bf2ad4de"
+  integrity sha512-X5FlekIFccNdjfsQqknKszj3hCt5PT9W9p72CXHDttH2khnYHfG/U+z4Z+2TdcQLfDlgn/kj6sY1dDFgas5rgw==
   dependencies:
     "@babel/runtime" "^7.1.2"
     "@expo/vector-icons" "^8.0.0"
@@ -3067,8 +3067,8 @@ expo@31.0.3:
     prop-types "^15.6.0"
     qs "^6.5.0"
     react-native-branch "2.2.5"
-    react-native-gesture-handler "1.0.8"
-    react-native-maps expo/react-native-maps#v0.22.0-exp.0
+    react-native-gesture-handler "1.0.9"
+    react-native-maps "github:expo/react-native-maps#v0.22.0-exp.0"
     react-native-reanimated "1.0.0-alpha.10"
     react-native-screens "1.0.0-alpha.15"
     react-native-svg "8.0.8"
@@ -6237,10 +6237,10 @@ react-native-easy-grid@0.2.0:
   dependencies:
     lodash "^4.11.1"
 
-react-native-gesture-handler@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.8.tgz#c2799741bf6443bb542892b0a36201a6d9ded209"
-  integrity sha512-Lc6PV5nKXgZdDeky96yi6gAM1UJHaYwzZbZyph0YuSv/L6vTtN+KPGsKyIENoOyxLJ/i43MSNn7fR+Xbv0w/xA==
+react-native-gesture-handler@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.9.tgz#ddec4d19d51cb6fb54df6eca792ebd76aaef083f"
+  integrity sha512-TPaiS8cAGqQA9p1GwjDbgMyNVCO/7cWC05h1rWIX2ZLoB1oSxGEBi5Es211HpBUmsTAzrUGH7M+ASGkAQeYH/A==
   dependencies:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
