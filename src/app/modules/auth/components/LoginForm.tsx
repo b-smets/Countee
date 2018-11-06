@@ -1,5 +1,6 @@
-import { Button, Form, Input, Item, Text } from 'native-base';
+import { Button, Form, Input, Item, Label, Text } from 'native-base';
 import * as React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { View } from 'react-native';
 
 export interface IProps {
@@ -23,21 +24,38 @@ export class LoginForm extends React.Component<IProps, IState> {
   render() {
     return (
       <View>
-        <Form style={{ marginBottom: 10 }}>
+        <Form style={{ marginBottom: 50 }}>
           <Item>
-            <Input placeholder='Email'
-              onChangeText={email => this.setState(prevState => ({ email }))}
-              onSubmitEditing={this.focusPassword} />
+            <Label><FormattedMessage id='module.auth.loginform.label.email' /></Label>
+            <Input
+              onChangeText={email => this.setState(() => ({ email }))}
+              onSubmitEditing={this.focusPassword}
+              autoFocus
+            />
           </Item>
           <Item>
-            <Input placeholder='Password' onChangeText={password => this.setState(prevState => ({ password }))}
-              secureTextEntry={true} ref={this._passwordInput} onSubmitEditing={this.performLogin} />
+            <Label><FormattedMessage id='module.auth.loginform.label.password' /></Label>
+            <Input
+              onChangeText={password => this.setState(() => ({ password }))}
+              secureTextEntry={true}
+              ref={this._passwordInput}
+              onSubmitEditing={this.performLogin} />
           </Item>
         </Form>
-        <Button full disabled={!this.canLogin()} onPress={this.performLogin}>
-          <Text>Login</Text>
-        </Button>
-      </View>
+        <FormattedMessage id='module.auth.loginform.button.login'>
+          {
+            message => (
+              <Button
+                full
+                disabled={!this.canLogin()}
+                onPress={this.performLogin}
+                textStyle={{ textTransform: 'uppercase' }}>
+                <Text>{message}</Text>
+              </Button>
+            )
+          }
+        </FormattedMessage>
+      </View >
     );
   }
 

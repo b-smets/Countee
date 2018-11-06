@@ -15,8 +15,11 @@ const UserCardWrapped: React.SFC<IProps> = ({ userInfo }) => {
       <CardItem>
         <Left>
           <Body>
-            <Text>{userInfo.name}</Text>
-            <Text note>{userInfo.email}</Text>
+            <Text>{userInfo.name || userInfo.email}</Text>
+            {
+              userInfo.name &&
+              <Text note>{userInfo.email}</Text>
+            }
           </Body>
         </Left>
       </CardItem>

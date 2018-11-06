@@ -1,7 +1,9 @@
 import { AppLoading, Font } from 'expo';
+import { Root } from 'native-base';
 import * as React from 'react';
 import { RootStack } from './config/routes';
 import { AuthContext, AuthProvider } from './modules/auth';
+import { TranslationProvider } from './modules/i18n/components/TranslationProvider';
 
 interface IState {
   fontLoaded: boolean;
@@ -22,21 +24,25 @@ export class App extends React.Component<{}, IState> {
     this.setState(() => ({ fontLoaded: true }));
   }
 
-  public render() {
+  render() {
     const { fontLoaded } = this.state;
     return (
-      <AuthProvider>
-        <AuthContext.Consumer>
-          {
-            ({ userInfo, subscribedForAuthChanges }) => {
-              if (!fontLoaded || !subscribedForAuthChanges) {
-                return <AppLoading />;
+      <TranslationProvider locale='en'>
+        <Root>
+          <AuthProvider>
+            <AuthContext.Consumer>
+              {
+                ({ userInfo, subscribedForAuthChanges }) => {
+                  if (!fontLoaded || !subscribedForAuthChanges) {
+                    return <AppLoading />;
+                  }
+                  return <RootStack loggedIn={!!userInfo} />;
+                }
               }
-              return <RootStack loggedIn={!!userInfo} />;
-            }
-          }
-        </AuthContext.Consumer>
-      </AuthProvider>
+            </AuthContext.Consumer>
+          </AuthProvider>
+        </Root>
+      </TranslationProvider>
     );
   }
 }
