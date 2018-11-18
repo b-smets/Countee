@@ -775,10 +775,10 @@
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.11.tgz#32a853fad9974cbbc9fc766ec5699a18b22ccee6"
   integrity sha512-WyMXDxk/WZ+f2lOCeEvDWUce2f5Kk2sNfvArK8f+PlUnzFdy/MBzLXrmbMgyZXP7GP4ooUxYV8Sdmoh1hGk1Uw==
 
-"@types/expo@30.0.0":
-  version "30.0.0"
-  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-30.0.0.tgz#fb19a1148b8d3136bf31cdc2ea09baa81b282a36"
-  integrity sha512-LFpFv/vVB8e2rO9yxC3MVMXZfzCe7hK6TV6xsneUbtG+lduGAaqNeT1w8paiPuK5jTp5Xe+ZnAC/TSFi5h+12Q==
+"@types/expo@30.0.1":
+  version "30.0.1"
+  resolved "https://registry.yarnpkg.com/@types/expo/-/expo-30.0.1.tgz#1ca28810d098092b716cced3f28f7ea0d89140a0"
+  integrity sha512-B30jtanPbvaVJO5P1phkMUgmzDH6PHP9BfMYlwJ8WY/ruEGmI0MKZutIdhoIwPfdb8WOh1erBIVZYeC4sw2Y+A==
   dependencies:
     "@types/fbemitter" "*"
     "@types/react" "*"
