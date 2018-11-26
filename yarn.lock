@@ -859,10 +859,10 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-navigation@2.13.4":
-  version "2.13.4"
-  resolved "https://registry.yarnpkg.com/@types/react-navigation/-/react-navigation-2.13.4.tgz#e88c5c44a637bea5976f56d46d80f001016403f0"
-  integrity sha512-3OVMk3sk8tP0MSt7m7kLO595m9JV7u7Y4WNuMOhgvmGO8nmFxICp20n1G20FdJtz0+wRXeh8a60Az6nfhC618Q==
+"@types/react-navigation@2.13.5":
+  version "2.13.5"
+  resolved "https://registry.yarnpkg.com/@types/react-navigation/-/react-navigation-2.13.5.tgz#7bb1712db3566bf856df69b82463ebf85f6b2d87"
+  integrity sha512-ZaZ1wrwgFFdZ00JmvDO4uOO9+50C9kE04sulGZ4/a0h0OayBDGd7LS2SomwyYmS47QCIsijxPYE9qkEtlddivA==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
