@@ -10,7 +10,7 @@
     "@types/react": "^16.4.18",
     "@types/react-intl": "^2.3.11",
     "@types/react-native": "0.57.13",
-    "@types/react-navigation": "2.13.4",
+    "@types/react-navigation": "2.13.5",
     "@types/react-test-renderer": "^16.0.3",
     "jest-expo": "28.0.0",
     "react-test-renderer": "^16.6.0",
