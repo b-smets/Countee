@@ -18,7 +18,7 @@
     "tslib": "^1.9.3",
     "tslint": "5.11.0",
     "tslint-microsoft-contrib": "^5.2.1",
-    "typescript": "3.1.6"
+    "typescript": "3.2.1"
   },
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
